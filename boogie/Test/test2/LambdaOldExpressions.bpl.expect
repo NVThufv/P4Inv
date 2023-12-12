@@ -1,0 +1,6 @@
+LambdaOldExpressions.bpl(29,1): Error: a postcondition could not be proved on this return path
+LambdaOldExpressions.bpl(23,3): Related location: this is the postcondition that could not be proved
+Execution trace:
+    LambdaOldExpressions.bpl(27,7): anon0
+
+Boogie program verifier finished with 4 verified, 1 error

@@ -1,0 +1,5 @@
+Boxing.bpl(24,3): Error: this assertion could not be proved
+Execution trace:
+    Boxing.bpl(19,6): anon0
+
+Boogie program verifier finished with 0 verified, 1 error

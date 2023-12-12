@@ -1,0 +1,8 @@
+Triggers0.bpl(44,3): Error: this assertion could not be proved
+Execution trace:
+    Triggers0.bpl(44,3): anon0
+Triggers0.bpl(48,3): Error: this assertion could not be proved
+Execution trace:
+    Triggers0.bpl(44,3): anon0
+
+Boogie program verifier finished with 1 verified, 2 errors

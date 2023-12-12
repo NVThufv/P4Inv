@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Boogie.AbstractInterpretation</AssemblyName>
+    <RootNamespace>AbstractInterpretation</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseTypes\BaseTypes.csproj" />
+    <ProjectReference Include="..\CodeContractsExtender\CodeContractsExtender.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+DisjointDomains.bpl(18,5): Error: this assertion could not be proved
+Execution trace:
+    DisjointDomains.bpl(15,3): start
+DisjointDomains.bpl(25,5): Error: this assertion could not be proved
+Execution trace:
+    DisjointDomains.bpl(24,3): start
+DisjointDomains.bpl(31,5): Error: this assertion could not be proved
+Execution trace:
+    DisjointDomains.bpl(30,3): start
+
+Boogie program verifier finished with 0 verified, 3 errors

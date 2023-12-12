@@ -1,0 +1,6 @@
+//#!register_write registerRound_0 0 0
+//#!register_write registerVRound_0 0 0
+//#register_write registerValue_0 0 0
+
+//#register_write registerVRound_0 -1 0
+//#register_write registerRound_0 -1 0

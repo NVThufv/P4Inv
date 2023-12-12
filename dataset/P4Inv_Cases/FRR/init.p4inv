@@ -1,0 +1,3 @@
+// -1 means ALL
+//#register_write pkt_curr -1 0
+//#register_write pkt_par -1 0

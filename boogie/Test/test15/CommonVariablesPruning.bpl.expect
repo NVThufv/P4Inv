@@ -1,0 +1,220 @@
+CommonVariablesPruning.bpl(28,5): Error: this assertion could not be proved
+Execution trace:
+    CommonVariablesPruning.bpl(21,3): anon0
+    CommonVariablesPruning.bpl(23,7): anon2_Then
+*** MODEL
+a -> T@U!val!0
+b -> T@U!val!1
+boolType -> T@T!val!1
+intType -> T@T!val!0
+x -> 
+x@0 -> false
+y -> 
+y@0 -> 4
+bool_2_U -> {
+  false -> false
+  else -> false
+}
+ControlFlow -> {
+  0 0 -> 9
+  0 2 -> (- 1)
+  0 8 -> 2
+  0 9 -> 8
+  else -> (- 1)
+}
+Ctor -> {
+  T@T!val!0 -> 0
+  T@T!val!1 -> 1
+  T@T!val!2 -> 2
+  T@T!val!3 -> 2
+  else -> 2
+}
+int_2_U -> {
+  1 -> 1
+  2 -> 2
+  4 -> 4
+  else -> 2
+}
+Length -> {
+  T@U!val!0 -> 7
+  T@U!val!1 -> 7
+  else -> 7
+}
+MapType0Select -> {
+  T@U!val!0 1 -> 4
+  T@U!val!1 2 -> false
+  else -> false
+}
+MapType0Store -> {
+  else -> false
+}
+MapType0Type -> {
+  T@T!val!0 T@T!val!0 -> T@T!val!2
+  T@T!val!0 T@T!val!1 -> T@T!val!3
+  else -> T@T!val!2
+}
+MapType0TypeInv0 -> {
+  T@T!val!2 -> T@T!val!0
+  T@T!val!3 -> T@T!val!0
+  else -> T@T!val!0
+}
+MapType0TypeInv1 -> {
+  T@T!val!2 -> T@T!val!0
+  T@T!val!3 -> T@T!val!1
+  else -> T@T!val!0
+}
+real_pow -> {
+  else -> 0.0
+}
+tickleBool -> {
+  false -> true
+  true -> true
+  else -> true
+}
+type -> {
+  1 -> T@T!val!0
+  2 -> T@T!val!0
+  4 -> T@T!val!0
+  false -> T@T!val!1
+  T@U!val!0 -> T@T!val!2
+  T@U!val!1 -> T@T!val!3
+  else -> T@T!val!0
+}
+U_2_bool -> {
+  false -> false
+  else -> false
+}
+U_2_int -> {
+  1 -> 1
+  2 -> 2
+  4 -> 4
+  else -> 4
+}
+UOrdering2 -> {
+  else -> false
+}
+UOrdering3 -> {
+  else -> false
+}
+*** STATE <initial>
+  x -> 
+  y -> 
+*** END_STATE
+*** STATE before
+*** END_STATE
+*** STATE after
+  x -> false
+  y -> 4
+*** END_STATE
+*** END_MODEL
+CommonVariablesPruning.bpl(45,5): Error: this assertion could not be proved
+Execution trace:
+    CommonVariablesPruning.bpl(38,3): anon0
+    CommonVariablesPruning.bpl(40,7): anon2_Then
+*** MODEL
+a -> T@U!val!0
+b -> T@U!val!1
+boolType -> T@T!val!1
+intType -> T@T!val!0
+x -> 
+x@0 -> false
+y -> 
+y@0 -> 4
+bool_2_U -> {
+  false -> false
+  else -> false
+}
+ControlFlow -> {
+  0 0 -> 9
+  0 2 -> (- 1)
+  0 8 -> 2
+  0 9 -> 8
+  else -> (- 1)
+}
+Ctor -> {
+  T@T!val!0 -> 0
+  T@T!val!1 -> 1
+  T@T!val!2 -> 2
+  T@T!val!3 -> 2
+  else -> 2
+}
+int_2_U -> {
+  1 -> 1
+  2 -> 2
+  4 -> 4
+  else -> 2
+}
+Length -> {
+  T@U!val!0 -> 5
+  T@U!val!1 -> 5
+  else -> 5
+}
+MapType0Select -> {
+  T@U!val!0 1 -> 4
+  T@U!val!1 2 -> false
+  else -> false
+}
+MapType0Store -> {
+  else -> false
+}
+MapType0Type -> {
+  T@T!val!0 T@T!val!0 -> T@T!val!2
+  T@T!val!0 T@T!val!1 -> T@T!val!3
+  else -> T@T!val!2
+}
+MapType0TypeInv0 -> {
+  T@T!val!2 -> T@T!val!0
+  T@T!val!3 -> T@T!val!0
+  else -> T@T!val!0
+}
+MapType0TypeInv1 -> {
+  T@T!val!2 -> T@T!val!0
+  T@T!val!3 -> T@T!val!1
+  else -> T@T!val!0
+}
+real_pow -> {
+  else -> 0.0
+}
+tickleBool -> {
+  false -> true
+  true -> true
+  else -> true
+}
+type -> {
+  1 -> T@T!val!0
+  2 -> T@T!val!0
+  4 -> T@T!val!0
+  false -> T@T!val!1
+  T@U!val!0 -> T@T!val!2
+  T@U!val!1 -> T@T!val!3
+  else -> T@T!val!0
+}
+U_2_bool -> {
+  false -> false
+  else -> false
+}
+U_2_int -> {
+  1 -> 1
+  2 -> 2
+  4 -> 4
+  else -> 4
+}
+UOrdering2 -> {
+  else -> false
+}
+UOrdering3 -> {
+  else -> false
+}
+*** STATE <initial>
+  x -> 
+  y -> 
+*** END_STATE
+*** STATE before
+*** END_STATE
+*** STATE after
+  x -> false
+  y -> 4
+*** END_STATE
+*** END_MODEL
+
+Boogie program verifier finished with 0 verified, 2 errors

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Boogie</PackageId>
+    <Description>An SMT-based program verifier.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>BoogieDriver</AssemblyName>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>boogie</ToolCommandName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractInterpretation\AbstractInterpretation.csproj" />
+    <ProjectReference Include="..\BaseTypes\BaseTypes.csproj" />
+    <ProjectReference Include="..\CodeContractsExtender\CodeContractsExtender.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\ExecutionEngine\ExecutionEngine.csproj" />
+    <ProjectReference Include="..\Graph\Graph.csproj" />
+    <ProjectReference Include="..\Houdini\Houdini.csproj" />
+    <ProjectReference Include="..\Provers\SMTLib\SMTLib.csproj" />
+    <ProjectReference Include="..\VCExpr\VCExpr.csproj" />
+    <ProjectReference Include="..\VCGeneration\VCGeneration.csproj" />
+  </ItemGroup>
+
+</Project>

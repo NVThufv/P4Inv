@@ -1,0 +1,5 @@
+MapAxiomsConsistency.bpl(98,5): Error: this assertion could not be proved
+Execution trace:
+    MapAxiomsConsistency.bpl(83,13): anon0
+
+Boogie program verifier finished with 0 verified, 1 error

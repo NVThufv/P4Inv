@@ -1,0 +1,9 @@
+Assignment computed by Houdini:
+b1 = False
+b2 = True
+houd2.bpl(17,1): Error: a postcondition could not be proved on this return path
+houd2.bpl(14,1): Related location: this is the postcondition that could not be proved
+Execution trace:
+    houd2.bpl(16,3): anon0
+
+Boogie program verifier finished with 1 verified, 1 error

@@ -1,0 +1,29 @@
+<Project>
+
+  <!-- Target framework and package configuration -->
+  <PropertyGroup>
+    <Version>2.16.3</Version>
+    <TargetFramework>net6.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Boogie</Authors>
+    <RepositoryUrl>https://github.com/boogie-org/boogie</RepositoryUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <!-- Include license file -->
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
+  </ItemGroup>
+
+  <!-- Use StyleCop to check for consistent code formatting -->
+  <ItemGroup Condition="'$(Configuration)' != 'Release'">
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json" />
+  </ItemGroup>
+
+  <!-- Configure StyleCop analysis rules -->
+  <PropertyGroup Condition="'$(Configuration)' != 'Release'">
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)StyleCop.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+</Project>

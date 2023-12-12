@@ -1,0 +1,45 @@
+table_set_default curr_par_eq_zero set_par_to_ingress
+table_set_default curr_par_neq_in set_out_to_ingress
+table_set_default hit_depth go_to_next
+table_set_default out_eq_zero start_from_one
+table_set_default curr_par_eq_neq_ingress set_next_port
+table_set_default set_parent_out send_to_parent
+table_set_default send_parent send_on_parent
+table_set_default send_in_ingress send_in
+table_set_default start_bfs set_bfs_tags
+table_set_default jump_to_next skip_parent
+table_set_default try_next next_outport
+table_set_default to_parent outport_to_parent
+table_set_default fwd_parent towards_parent
+table_set_default check_outport_status xor_outport 0b1111
+table_add if_status set_if_status 0b1000000&&&0b1000000 0b1000&&&0b1000 => 1 1
+table_add if_status set_if_status 0b0100000&&&0b0100000 0b0100&&&0b0100 => 2 2
+table_add if_status set_if_status 0b0010000&&&0b0010000 0b0010&&&0b0010 => 3 3
+table_add if_status set_if_status 0b0001000&&&0b0001000 0b0001&&&0b0001 => 4 4
+table_add if_status set_if_status 0b0000100&&&0b0000100 0b1000&&&0b1000 => 1 5
+table_add if_status set_if_status 0b0000010&&&0b0000010 0b0100&&&0b0100 => 2 6
+table_add if_status set_if_status 0b0000001&&&0b0000001 0b0010&&&0b0010 => 3 7
+table_add set_egress_port starting_port_meta 1 => 0b1111000
+table_add set_egress_port starting_port_meta 2 => 0b0111100
+table_add set_egress_port starting_port_meta 3 => 0b0011110
+table_add set_egress_port starting_port_meta 4 => 0b0001111
+table_add check_out_failed skip_failures 0b1000000&&&0b1000000 0b1000&&&0b1000 => 1 1
+table_add check_out_failed skip_failures 0b0100000&&&0b0100000 0b0100&&&0b0100 => 2 2
+table_add check_out_failed skip_failures 0b0010000&&&0b0010000 0b0010&&&0b0010 => 3 3
+table_add check_out_failed skip_failures 0b0001000&&&0b0001000 0b0001&&&0b0001 => 4 4
+table_add check_out_failed skip_failures 0b0000100&&&0b0000100 0b1000&&&0b1000 => 1 5
+table_add check_out_failed skip_failures 0b0000010&&&0b0000010 0b0100&&&0b0100 => 2 6
+table_add check_out_failed skip_failures 0b0000001&&&0b0000001 0b0010&&&0b0010 => 3 7
+table_add set_out_port set_out_meta 1 => 0b1111000
+table_add set_out_port set_out_meta 2 => 0b0111100
+table_add set_out_port set_out_meta 3 => 0b0011110
+table_add set_out_port set_out_meta 4 => 0b0001111
+table_add fwd_pkt fwd 0b1000000&&&0b1000000 0b1000&&&0b1000 => 1 1
+table_add fwd_pkt fwd 0b0100000&&&0b0100000 0b0100&&&0b0100 => 2 2
+table_add fwd_pkt fwd 0b0010000&&&0b0010000 0b0010&&&0b0010 => 3 3
+table_add fwd_pkt fwd 0b0001000&&&0b0001000 0b0001&&&0b0001 => 4 4
+table_add fwd_pkt fwd 0b0000100&&&0b0000100 0b1000&&&0b1000 => 1 5
+table_add fwd_pkt fwd 0b0000010&&&0b0000010 0b0100&&&0b0100 => 2 6
+table_add fwd_pkt fwd 0b0000001&&&0b0000001 0b0010&&&0b0010 => 3 7
+table_add default_route set_default_route 1 => 2
+table_add default_route set_default_route 2 => 4

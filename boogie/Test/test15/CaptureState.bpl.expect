@@ -1,0 +1,59 @@
+CaptureState.bpl(30,1): Error: a postcondition could not be proved on this return path
+CaptureState.bpl(11,3): Related location: this is the postcondition that could not be proved
+Execution trace:
+    CaptureState.bpl(15,3): anon0
+    CaptureState.bpl(19,5): anon4_Then
+    CaptureState.bpl(27,5): anon3
+*** MODEL
+F -> T@FieldName!val!0
+Heap -> |T@[Ref,FieldName]Int!val!0|
+m -> 
+m@0 -> (- 8)
+m@1 -> (- 7)
+m@2 -> 0
+m@3 -> (- 7)
+r -> 
+r@0 -> (- 14)
+this -> T@Ref!val!0
+x -> 40
+y -> 0
+ControlFlow -> {
+  0 0 -> 6
+  0 2 -> (- 1)
+  0 3 -> 2
+  0 5 -> 3
+  0 6 -> 5
+  else -> 2
+}
+Select__T@[Ref,FieldName]Int_ -> {
+  |T@[Ref,FieldName]Int!val!0| T@Ref!val!0 T@FieldName!val!0 -> (- 8)
+  else -> (- 8)
+}
+tickleBool -> {
+  false -> true
+  true -> true
+  else -> true
+}
+*** STATE <initial>
+  Heap -> |T@[Ref,FieldName]Int!val!0|
+  m -> 
+  r -> 
+  this -> T@Ref!val!0
+  x -> 40
+  y -> 0
+*** END_STATE
+*** STATE top
+*** END_STATE
+*** STATE then
+  m -> (- 8)
+*** END_STATE
+*** STATE postUpdate0
+  m -> (- 7)
+*** END_STATE
+*** STATE end
+  m -> 7
+  r -> (- 14)
+*** END_STATE
+*** END_MODEL
+
+Boogie program verifier finished with 0 verified, 1 error

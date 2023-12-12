@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Boogie.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseTypes\BaseTypes.csproj" />
+    <ProjectReference Include="..\CodeContractsExtender\CodeContractsExtender.csproj" />
+    <ProjectReference Include="..\Graph\Graph.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="base.bpl" />
+    <EmbeddedResource Include="node.bpl" />
+  </ItemGroup>
+
+</Project>

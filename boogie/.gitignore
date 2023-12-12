@@ -1,0 +1,46 @@
+MSBuild_Logs/
+
+# Nuget
+Source/packages/
+
+# Binaries
+bin/
+obj/
+Binaries/**/*.dll
+Binaries/**/*.mdb
+Binaries/**/*.exe
+Binaries/**/*.pdb
+Binaries/**/*.config
+Binaries/**/*.vshost.exe.manifest
+
+# Tests
+Source/UnitTests/TestResult.xml
+Test/**/Output
+TestResult.xml
+
+# Coco/R
+Scanner.cs.old
+Parser.cs.old
+
+# Editor temporary files
+.*.swp
+
+# Visual Studio files
+Source/_ReSharper.Boogie
+Source/**/*.user
+Source/*.suo
+Source/*.cache
+Source/.vs/
+
+.vscode
+.vs
+
+# MonoDevelop files
+Source/*.userprefs
+
+# Rider files
+.idea/
+
+# Midfiles
+*.dot
+z3model

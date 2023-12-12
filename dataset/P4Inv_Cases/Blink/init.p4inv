@@ -1,0 +1,10 @@
+// Verify for meta.id == 0
+//#register_write flowselector_last_ret_bin_0 -1 0
+
+//#register_write sw_index_0 -1 0
+//#register_write sw_sum_0 0 0
+//#register_write sw_0 0 0
+//#register_write sw_0 1 0
+//#register_write sw_0 2 0
+//#register_write sw_0 3 0
+

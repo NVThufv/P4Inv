@@ -1,0 +1,5 @@
+FunAxioms2.bpl(24,3): Error: this assertion could not be proved
+Execution trace:
+    FunAxioms2.bpl(20,5): anon0
+
+Boogie program verifier finished with 0 verified, 1 error
